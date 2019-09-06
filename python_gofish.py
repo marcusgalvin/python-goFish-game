@@ -29,19 +29,19 @@ print ("user chooses these 8 random cards",
        players_cards)
 
 # find matches in the computers cards
+# this will find the duplicates but combine them into a single int or string
+
 computer_matches = set(
     [x for x in computer_cards if computer_cards.count(x) > 1])
 
-print("computers matches: ", computer_matches)
+# print("computers matches: ", computer_matches)
 
 # once the computer finds its matches, we must duplicate the list to show that the computer has two of each card
 for item in computer_matches:
     computer_matches_dub.extend([item, item])
-    print(computer_matches_dub)
+    print("computer matches: ", computer_matches_dub)
 
-
-#  for i in range computer_cards:
-#    if computer_cards[0] ==
+    #next
 
 
 # if __name__ == '__main__':
